@@ -106,9 +106,127 @@ console.log(now - 1991 > now - 2018);
 
 */
 
+/*
+// OPERATOR PRECENDENCE
 const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
 
-
 console.log(now - 1991 > now - 2018);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10
+console.log(x, y);
+
+const AverageAge = (ageJonas + ageSarah) / 2
+console.log(ageJonas, ageSarah, AverageAge);
+*/
+
+/*
+// TEMPLATE LITERALS
+const firstName = 'Andre';
+const job = 'Developer';
+const birthYear = 1994;
+const year = 2022
+
+// TEMPLATE LITERAL EXAMPLE - complicated
+const Andre = " I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(Andre);
+
+// TEMPLATE LITERAL EASIER EXAMPLE
+const andreNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(andreNew);
+*/
+
+/*
+// IF ELSE STATEMENTS - ELSE block is optional'
+// EXAMPLE IS CALLED A IF ELSE CONTROLLED STRUCTURE
+const age = 15;
+const isOldEnough = age >= 18;
+
+if(isOldEnough) {
+  console.log('Sarah can start driving license 🚗');
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years 🙃`);
+}
+
+const birthYear = 2012;
+
+let century;
+if(birthYear <= 2000) {
+  let century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+*/
+
+// TYPE CONVERSION, TYPE COERCION
+
+/*
+//Type conversion
+const inputYear = '1994';
+console.log(Number(inputYear)); // RETURN STRING AS #
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Andre'));
+console.log(typeof Nan);
+
+// TYPE COERCION
+console.log('I am ' + 23 + ' years old ');
+console.log('I am ' + '23' + ' years old');
+
+let n = '1' + 1; // '11'
+n = n - 1;
+console.log(n);
+*/
+
+
+// TRUTHY AND FALSEY VALUES
+// 5 FALSEY VALUES: 0, '', UNDEFINED, NULL, NAN
+
+/*
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Andre'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+// Type coercion in if else condition EX:
+
+// FALSEY EXAMPLE
+const money = 0;
+if(money) {
+  console.log("Don't spend it all");
+} else {
+  console.log('You should get a job!');
+}
+
+// TRUTHY EXAMPLE
+const money1 = 100;
+if(money1) {
+  console.log("Don't spend it all");
+} else {
+  console.log('You should get a job!');
+}
+
+// EQUALITY OPERATORS ===
+
+const age = 18;
+if(age === 18) console.log('You just become an adult');
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) {
+  console.log('Cool! 23 is an amazing number!');23
+} else if(favourite === 7) {
+  console.log('7 is also a cool number');
+} else {
+  console.log('Number is not 23 or 7');
+}
+*/
+
+// BASIC BOOLEAN LOGIC : AND, OR, & NOT OPERATORS
